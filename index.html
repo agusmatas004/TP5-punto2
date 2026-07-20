@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona - Generaciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crear una Persona</h1>
+        <form id="persona-form">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Ej. María">
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" min="0" placeholder="Ej. 28">
+            </div>
+            <div class="form-group">
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" placeholder="Ej. 12345678A">
+            </div>
+            <div class="form-group">
+                <label for="sexo">Sexo</label>
+                <select id="sexo">
+                    <option value="H">Hombre</option>
+                    <option value="M">Mujer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="peso">Peso (kg)</label>
+                <input type="number" id="peso" min="0" step="0.1" placeholder="Ej. 70">
+            </div>
+            <div class="form-group">
+                <label for="altura">Altura (m)</label>
+                <input type="number" id="altura" min="0" step="0.01" placeholder="Ej. 1.70">
+            </div>
+            <div class="form-group full">
+                <label for="nacimiento">Año de nacimiento</label>
+                <input type="number" id="nacimiento" min="1930" max="2026" placeholder="Ej. 1996">
+            </div>
+            <div class="button-group">
+                <button id="boton-crear">Crear persona</button>
+                <button type="button" id="boton-generacion" disabled>Mostrar generación</button>
+                <button type="button" id="boton-edad" disabled>Es mayor de edad</button>
+                <button type="button" id="boton-datos" disabled>Mostrar datos</button>
+            </div>
+        </form>
+        <div class="result-box" id="resultado">Completa el formulario y crea una persona.</div>
+        <p class="footer">Usa los botones para ver la generación, saber si es mayor de edad o revisar la información.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
